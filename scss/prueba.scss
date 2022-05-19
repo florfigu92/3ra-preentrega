@@ -65,7 +65,8 @@ aside{
     grid-area: aside;
     background-color: #f6dfe7;
     color: $black;
-    margin: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
     border-radius: 5px;
     text-align: center;
 }
@@ -89,6 +90,9 @@ footer{
     display: flex; 
     flex-direction: column;
     align-items: center;
+        & img{
+            margin-bottom: 20px;
+        }
 }
 
 .barra a:hover{
@@ -119,15 +123,16 @@ footer{
 .preview{
     display: flex;
     flex-direction: column;
-    padding: 10px 0;
+    padding: 10px;
 }
 
 @mixin tamaño{
     border-radius: 10px;
     overflow: auto;
-    width: 360px;
+    width: 300px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
-    margin-bottom: 20px;
+    margin-right: 5px;
+    margin-bottom: 25px
 }
 
 .preview-noticias-caja{
@@ -139,6 +144,10 @@ footer{
         height: 80%;
         }
 
+}
+
+.caja__del__index{
+    margin-left: 25px;
 }
 
 /*MAPAAAA */
@@ -183,11 +192,16 @@ $grupos:(
  padding-bottom: 50px;
 }
 
+.titulo__producto{
+    margin-right: 50px;
+}
+
 /*Aside*/
 .aside-texto{
     width: 200px;
+    text-align: center;
     justify-content: center;
-    padding-left: 50px;
+    padding-left: 30px;
 }
 
 
@@ -232,8 +246,18 @@ $grupos:(
 
 /*Noticias*/
 
+.text-center-titulo{
+    font-size: $letrasize*2;
+    background-color: #f9f0ac;
+    transition: background-color 2s ease;
+        &:hover{
+            background-color:#bcfcdc;
+        }
+}
+
 .text-center{
     background-color: #f9f0ac;
+    font-size: 15px;
     span{
         @extend .gg-ive;
         font-weight: bold;

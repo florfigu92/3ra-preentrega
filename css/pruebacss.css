@@ -17,6 +17,10 @@ footer {
 .caja-1 {
   margin-top: 20px;
   padding: 10px 0; }
+  .caja-1 h4 {
+    text-align: center; }
+  .caja-1 ul {
+    text-align: center; }
   .caja-1 ul li a {
     text-decoration: none;
     color: #000000; }
@@ -24,15 +28,25 @@ footer {
 .caja-2 {
   margin-top: 20px;
   padding: 10px 0; }
+  .caja-2 h4 {
+    text-align: center; }
+  .caja-2 ul {
+    text-align: center; }
+    .caja-2 ul li a {
+      text-decoration: none;
+      color: #000000; }
 
 .caja-3 {
-  margin-top: 0px;
-  padding: 0 0 20px 0; }
+  margin-top: 20px;
+  padding: 10px 0; }
+  .caja-3 h4 {
+    text-align: center; }
   .caja-3 ul {
     display: flex;
-    align-items: baseline; }
+    align-items: center; }
     .caja-3 ul li {
-      margin: 10px 10px 0 0; }
+      margin-left: 30px;
+      margin-top: 10px; }
       .caja-3 ul li a {
         text-decoration: none;
         color: #000; }
@@ -100,7 +114,8 @@ aside {
   grid-area: aside;
   background-color: #f6dfe7;
   color: #000000;
-  margin: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
   border-radius: 5px;
   text-align: center; }
 
@@ -117,6 +132,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .barra img {
+    margin-bottom: 20px; }
 
 .barra a:hover {
   transform: scale(1.1); }
@@ -136,19 +153,23 @@ footer {
 .preview {
   display: flex;
   flex-direction: column;
-  padding: 10px 0; }
+  padding: 10px; }
 
 .preview-noticias-caja {
   border-radius: 10px;
   overflow: auto;
-  width: 360px;
+  width: 300px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-  margin-bottom: 20px;
+  margin-right: 5px;
+  margin-bottom: 25px;
   background-color: #ffffff;
   border: 1px solid #000; }
   .preview-noticias-caja img {
     width: 100%;
     height: 80%; }
+
+.caja__del__index {
+  margin-left: 25px; }
 
 /*MAPAAAA */
 .gg-gidle {
@@ -192,11 +213,15 @@ footer {
   margin-right: 80px;
   padding-bottom: 50px; }
 
+.titulo__producto {
+  margin-right: 50px; }
+
 /*Aside*/
 .aside-texto {
   width: 200px;
+  text-align: center;
   justify-content: center;
-  padding-left: 50px; }
+  padding-left: 30px; }
 
 /*Galeria*/
 .galeria:hover {
@@ -224,8 +249,16 @@ footer {
   color: #000000; }
 
 /*Noticias*/
+.text-center-titulo {
+  font-size: 30px;
+  background-color: #f9f0ac;
+  transition: background-color 2s ease; }
+  .text-center-titulo:hover {
+    background-color: #bcfcdc; }
+
 .text-center {
   background-color: #f9f0ac;
+  font-size: 15px;
   transition: background-color 2s ease; }
   .text-center span {
     font-weight: bold; }
