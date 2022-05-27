@@ -3,14 +3,13 @@ aside{
     grid-area: aside;
     background-color: #f6dfe7;
     color: $black;
-    margin: 10px;
     border-radius: 5px;
     text-align: center;
+    margin: 0;
 }
 
 .aside-texto{
-    width: 200px;
-    padding-left: 80px;
+    padding-left: 50px;
     margin-top: 10px;
         & ul{
             text-align: center;
