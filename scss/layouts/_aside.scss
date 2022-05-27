@@ -1,6 +1,24 @@
 /*Aside*/
+aside{
+    grid-area: aside;
+    background-color: #f6dfe7;
+    color: $black;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
 .aside-texto{
     width: 200px;
     justify-content: center;
     padding-left: 50px;
+}
+
+.aside-texto{
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    padding-left: 30px;
 }

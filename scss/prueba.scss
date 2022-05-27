@@ -2,6 +2,8 @@
 @import "./variables/variables";
 @import "./base/reset";
 @import "./layouts/footer" ;
+@import "./layouts/aside";
+@import "./base/media_queries";
 
 /*
 font-family: 'Oswald', sans-serif;
@@ -51,35 +53,10 @@ li{
                          "footer";
 }
 
-header{
-    width: 100%;
-    background-color: #FBDFE9;
-    grid-area: header;
-}
-
 main{
     margin: 10px 0;
     grid-area: main;
 }
-aside{
-    grid-area: aside;
-    background-color: #f6dfe7;
-    color: $black;
-    margin-top: 10px;
-    margin-right: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-footer{
-    grid-area: footer;
-    background: rgb(184,96,210);
-    background: linear-gradient(90deg, rgba(184,96,210,0.3617822128851541) 0%, rgba(225,150,242,0.9668242296918768) 35%, rgba(245,203,244,1) 100%);
-}
-
-
-
-
 
 /*Navegacion*/
 
@@ -150,25 +127,6 @@ footer{
     margin-left: 25px;
 }
 
-/*MAPAAAA */
-
-$grupos:(
-    gidle: #031c65, 
-    blackpink: #8e035b,
-    itzy: #880206,
-    ive: #04a55a,
-    dreamcatcher: #035b65,
-    got7: #147a05,
-);
-
-@each $gg, $color in $grupos{
-    .gg-#{$gg} {
-        color:$color;
-    }
-} 
-
-
-
 .preview-noticias-caja{
     animation-name: mimovimiento;
     animation-duration: 4s;
@@ -195,16 +153,6 @@ $grupos:(
 .titulo__producto{
     margin-right: 50px;
 }
-
-/*Aside*/
-.aside-texto{
-    width: 200px;
-    text-align: center;
-    justify-content: center;
-    padding-left: 30px;
-}
-
-
 
 /*Galeria*/
 
@@ -285,96 +233,3 @@ $grupos:(
      padding: 10px;
    }
  
-
-   @media screen and (min-width:768px){
-    .grid{
-        grid-template-areas: "header header header header"
-                             "main main main aside"
-                             "footer footer footer footer"
-        ;
-        grid-gap: 10px;
-    }
-
-    header .contenedor{
-        padding-top: 20px;
-        max-width: 1000px;
-        margin: 0 auto;
-        max-width: 768px;
-    }
-    
-    .barra{
-        width: 100%;
-        align-items: center;
-        flex-direction: row;
-    }
-    .barra-navegacion{
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    
-    .preview{
-        align-items: center;
-    }
-    .cajas .contenedor{
-        padding: 10px;
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-    }
-    .caja-1, .caja-2, .caja-3{
-        padding: 10px;
-        margin-left: 5px;
-    }   
-    .productos{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .caja__producto{
-        margin-left: 10px;
-    }
-   
-    .container-fluid{
-        margin-left: 80px;
-    }
-
-    .iniciosesion-fluid{
-        margin-left: 30px;
-        width: 700px;
-    }
-}
-
-@media screen and (min-width:1024px){
-    .preview{
-        width: 100%;
-        flex-direction: row;
-    }
-    .preview-noticias-caja{
-        margin-left: 20px;
-    }
-
-    .contenedor{
-        max-width: 1024px;
-    }
-
-    .cajas .contenedor{
-        width: 100%;
-        justify-content: space-between;
-    }
-    .productos{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .caja__producto{
-        width: 320px;
-    }
-  
-    .iniciosesion-fluid{
-        margin: 200px;
-        width: 700px; 
-        }
-    
-}
-
-
-
