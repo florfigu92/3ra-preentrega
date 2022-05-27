@@ -1,4 +1,23 @@
 /*Layouts*/
+/*MAPAAAA */
+.gg-gidle {
+  color: #031c65; }
+
+.gg-blackpink {
+  color: #8e035b; }
+
+.gg-itzy {
+  color: #880206; }
+
+.gg-ive, .text-center span {
+  color: #04a55a; }
+
+.gg-dreamcatcher {
+  color: #035b65; }
+
+.gg-got7 {
+  color: #147a05; }
+
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +30,7 @@ footer {
   background: linear-gradient(90deg, rgba(184, 96, 210, 0.361782) 0%, rgba(225, 150, 242, 0.966824) 35%, #f5cbf4 100%); }
 
 .cajas {
-  font-family: 'Roboto', sans-serif;
-  width: 100%; }
+  font-family: 'Roboto', sans-serif; }
 
 .caja-1 {
   margin-top: 20px;
@@ -52,6 +70,97 @@ footer {
         color: #000; }
         .caja-3 ul li a i {
           font-size: 30px; }
+
+/*
+padding: 10px;
+        margin-left: 5px;
+*/
+/*Aside*/
+aside {
+  grid-area: aside;
+  background-color: #f6dfe7;
+  color: #000000;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center; }
+
+.aside-texto {
+  width: 200px;
+  padding-left: 80px;
+  margin-top: 10px; }
+  .aside-texto ul {
+    text-align: center; }
+
+header {
+  width: 100%;
+  background-color: #FBDFE9;
+  grid-area: header; }
+  header .carousel-inner h5, header p {
+    font-family: "Oswald", sans-serif;
+    color: #000000; }
+
+header {
+  width: 100%;
+  background-color: #FBDFE9;
+  grid-area: header; }
+
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-areas: "header header header header" "main main main aside" "footer footer footer footer";
+    grid-gap: 10px; }
+  header .contenedor {
+    padding-top: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    max-width: 768px; }
+  .barra {
+    width: 100%;
+    align-items: center;
+    flex-direction: row; }
+  .barra-navegacion {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around; }
+  .preview {
+    align-items: center; }
+  .cajas .contenedor {
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between; }
+  .caja-1, .caja-2, .caja-3 {
+    padding: 10px;
+    margin-left: 5px; }
+  .productos {
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .caja__producto {
+    margin-left: 10px; }
+  .container-fluid {
+    margin-left: 80px; }
+  .iniciosesion-fluid {
+    margin-left: 30px;
+    width: 700px; } }
+
+@media screen and (min-width: 1024px) {
+  .preview {
+    width: 100%;
+    flex-direction: row; }
+  .preview-noticias-caja {
+    margin-left: 20px; }
+  .contenedor {
+    max-width: 1024px; }
+  .cajas .contenedor {
+    width: 100%;
+    justify-content: space-between; }
+  .productos {
+    flex-direction: row;
+    justify-content: space-between; }
+  .caja__producto {
+    width: 320px; }
+  .iniciosesion-fluid {
+    margin: 200px;
+    width: 700px; } }
 
 /*
 font-family: 'Oswald', sans-serif;
@@ -101,28 +210,9 @@ li {
   display: grid;
   grid-template-areas: "header" "main"  "aside" "footer"; }
 
-header {
-  width: 100%;
-  background-color: #FBDFE9;
-  grid-area: header; }
-
 main {
   margin: 10px 0;
   grid-area: main; }
-
-aside {
-  grid-area: aside;
-  background-color: #f6dfe7;
-  color: #000000;
-  margin-top: 10px;
-  margin-right: 10px;
-  border-radius: 5px;
-  text-align: center; }
-
-footer {
-  grid-area: footer;
-  background: #b860d2;
-  background: linear-gradient(90deg, rgba(184, 96, 210, 0.361782) 0%, rgba(225, 150, 242, 0.966824) 35%, #f5cbf4 100%); }
 
 /*Navegacion*/
 .barra {
@@ -153,7 +243,8 @@ footer {
 .preview {
   display: flex;
   flex-direction: column;
-  padding: 10px; }
+  padding: 10px;
+  margin-left: 7px; }
 
 .preview-noticias-caja {
   border-radius: 10px;
@@ -170,25 +261,6 @@ footer {
 
 .caja__del__index {
   margin-left: 25px; }
-
-/*MAPAAAA */
-.gg-gidle {
-  color: #031c65; }
-
-.gg-blackpink {
-  color: #8e035b; }
-
-.gg-itzy {
-  color: #880206; }
-
-.gg-ive, .text-center span {
-  color: #04a55a; }
-
-.gg-dreamcatcher {
-  color: #035b65; }
-
-.gg-got7 {
-  color: #147a05; }
 
 .preview-noticias-caja {
   animation-name: mimovimiento;
@@ -207,21 +279,17 @@ footer {
     background-color: #cc7aaa; } }
 
 .container {
-  margin: 10px; }
+  margin: 1px; }
 
 .card-producto {
-  margin-right: 80px;
+  margin-right: 30px;
   padding-bottom: 50px; }
 
 .titulo__producto {
-  margin-right: 50px; }
+  margin-right: 20px; }
 
-/*Aside*/
-.aside-texto {
-  width: 200px;
-  text-align: center;
-  justify-content: center;
-  padding-left: 30px; }
+.cuadro__cuaderno {
+  margin: 10px !important; }
 
 /*Galeria*/
 .galeria:hover {

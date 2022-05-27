@@ -1,3 +1,9 @@
+@media screen and (min-width:425px) {
+    
+}
+
+
+
 @media screen and (min-width:768px){
     .grid{
         grid-template-areas: "header header header header"
@@ -80,7 +86,7 @@
     .caja__producto{
         width: 320px;
     }
-  
+    
     .iniciosesion-fluid{
         margin: 200px;
         width: 700px; 
