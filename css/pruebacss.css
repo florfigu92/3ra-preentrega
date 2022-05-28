@@ -106,254 +106,6 @@ header {
   background-color: #FBDFE9;
   grid-area: header; }
 
-@media screen and (min-width: 768px) {
-  .grid {
-    grid-template-areas: "header header header header" "main main main aside" "footer footer footer footer";
-    grid-gap: 10px; }
-  header .contenedor {
-    padding-top: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    max-width: 768px; }
-  .barra {
-    width: 100%;
-    align-items: center;
-    flex-direction: row; }
-  .barra-navegacion {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around; }
-  .preview {
-    align-items: center; }
-  .cajas .contenedor {
-    padding: 10px;
-    display: flex;
-    width: 100%;
-    justify-content: space-between; }
-  .caja-1, .caja-2, .caja-3 {
-    padding: 10px;
-    margin-left: 5px; }
-  .productos {
-    flex-direction: row;
-    flex-wrap: wrap; }
-  .caja__producto {
-    margin-left: 10px; }
-  .container-fluid {
-    margin-left: 80px; }
-  .iniciosesion-fluid {
-    margin-left: 30px;
-    width: 700px; } }
-
-@media screen and (min-width: 1024px) {
-  .preview {
-    width: 100%;
-    flex-direction: row; }
-  .preview-noticias-caja {
-    margin-left: 20px; }
-  .contenedor {
-    max-width: 1024px; }
-  .cajas .contenedor {
-    width: 100%;
-    justify-content: space-between; }
-  .productos {
-    flex-direction: row;
-    justify-content: space-between; }
-  .caja__producto {
-    width: 320px; }
-  .iniciosesion-fluid {
-    margin: 200px;
-    width: 700px; } }
-
-/*
-font-family: 'Oswald', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif;
-*/
-/*Utilidades*/
-.mb-1 {
-  margin-bottom: 10px; }
-
-.mb-2 {
-  margin-bottom: 20px; }
-
-.mt-1 {
-  margin-bottom: 10px; }
-
-.mt-2 {
-  margin-bottom: 20px; }
-
-.tx-cen {
-  text-align: center; }
-
-.padd-3 {
-  padding: 30px; }
-
-.boton-1, .boton-2 {
-  display: inline-block;
-  background-color: #FBDFE9;
-  padding: 5px 25px;
-  border: solid 1px #000000;
-  border-radius: 50px; }
-
-.boton-2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  color: #000000; }
-
-li {
-  list-style: none; }
-
-.contenedor {
-  max-width: 400px;
-  margin: 0 auto; }
-
-/*Mobile First 320px*/
-.grid {
-  display: grid;
-  grid-template-areas: "header" "main"  "aside" "footer"; }
-
-main {
-  margin: 5px 0;
-  grid-area: main; }
-
-/*Navegacion*/
-.barra {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .barra img {
-    margin-bottom: 20px; }
-
-.barra a:hover {
-  transform: scale(1.1); }
-
-.barra-navegacion {
-  display: flex;
-  flex-direction: column; }
-  .barra-navegacion li {
-    margin-top: 10px; }
-  .barra-navegacion li a {
-    text-decoration: none;
-    color: #000; }
-  .barra-navegacion li a:nth-child(1) {
-    transform: scalex(30deg); }
-
-/*Main*/
-.preview {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5px;
-  margin-left: 5px; }
-
-.preview-noticias-caja {
-  border-radius: 10px;
-  overflow: auto;
-  width: 250px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
-  margin-bottom: 25px;
-  background-color: #ffffff;
-  border: 1px solid #000;
-  justify-content: center; }
-  .preview-noticias-caja img {
-    width: 80%;
-    height: 80%; }
-
-.caja__del__index {
-  margin-left: 5px; }
-
-.preview-noticias-caja {
-  animation-name: mimovimiento;
-  animation-duration: 4s;
-  animation-delay: 1s;
-  animation-iteration-count: infinite; }
-
-@keyframes mimovimiento {
-  0% {
-    background-color: #cc7aaa; }
-  25% {
-    background-color: #d9bcc6; }
-  50% {
-    background-color: #d9a7b9; }
-  100% {
-    background-color: #cc7aaa; } }
-
-.container {
-  margin: 1px; }
-
-.card-producto {
-  margin-right: 10px;
-  padding-bottom: 50px; }
-
-.titulo__producto {
-  margin-right: 10px;
-  margin-top: 40px; }
-
-/*Galeria*/
-.galeria:hover {
-  filter: opacity(0.9);
-  transform: scale(1.04); }
-
-/*Tienda*/
-.productos {
-  display: flex;
-  flex-direction: column;
-  margin-left: 5px;
-  margin-right: 5px; }
-
-.caja__producto {
-  margin: 10px 0;
-  width: 330px;
-  background-color: #fff;
-  border: 1px solid #000;
-  border-radius: 10px;
-  padding: 20px; }
-  .caja__producto img {
-    width: 100%; }
-
-.boton-2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  color: #000000; }
-
-/*Noticias*/
-.contenedor h2 {
-  margin-top: 20px;
-  font-size: x-large; }
-
-.text-center-titulo {
-  font-size: 30px;
-  background-color: #f9f0ac;
-  transition: background-color 2s ease; }
-  .text-center-titulo:hover {
-    background-color: #bcfcdc; }
-
-.text-center {
-  background-color: #f9f0ac;
-  font-size: 15px;
-  transition: background-color 2s ease; }
-  .text-center span {
-    font-weight: bold; }
-  .text-center:hover {
-    background-color: #bcfcdc; }
-
-/*Registrate*/
-.iniciosesion-fluid {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 5px;
-  margin-right: 5px;
-  background-color: #FBDFE9; }
-
-.registrate {
-  padding-bottom: 20px; }
-
-.padding-1 {
-  padding: 10px; }
-
 @media screen and (min-width: 375px) {
   .grid {
     display: grid;
@@ -607,3 +359,193 @@ main {
     margin-left: 5px; }
   .caja__producto {
     width: 300px; } }
+
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+/*Utilidades*/
+.mb-1 {
+  margin-bottom: 10px; }
+
+.mb-2 {
+  margin-bottom: 20px; }
+
+.mt-1 {
+  margin-bottom: 10px; }
+
+.mt-2 {
+  margin-bottom: 20px; }
+
+.tx-cen {
+  text-align: center; }
+
+.padd-3 {
+  padding: 30px; }
+
+.boton-1, .boton-2 {
+  display: inline-block;
+  background-color: #FBDFE9;
+  padding: 5px 25px;
+  border: solid 1px #000000;
+  border-radius: 50px; }
+
+.boton-2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #000000; }
+
+li {
+  list-style: none; }
+
+.contenedor {
+  max-width: 400px;
+  margin: 0 auto; }
+
+/*Mobile First 320px*/
+.grid {
+  display: grid;
+  grid-template-areas: "header" "main"  "aside" "footer"; }
+
+main {
+  margin: 5px 0;
+  grid-area: main; }
+
+/*Navegacion*/
+.barra {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .barra img {
+    margin-bottom: 20px; }
+
+.barra a:hover {
+  transform: scale(1.1); }
+
+.barra-navegacion {
+  display: flex;
+  flex-direction: column; }
+  .barra-navegacion li {
+    margin-top: 10px; }
+  .barra-navegacion li a {
+    text-decoration: none;
+    color: #000; }
+  .barra-navegacion li a:nth-child(1) {
+    transform: scalex(30deg); }
+
+/*Main*/
+.preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  margin-left: 5px; }
+
+.preview-noticias-caja {
+  border-radius: 10px;
+  overflow: auto;
+  width: 250px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+  margin-bottom: 25px;
+  background-color: #ffffff;
+  border: 1px solid #000;
+  justify-content: center; }
+  .preview-noticias-caja img {
+    width: 80%;
+    height: 80%; }
+
+.caja__del__index {
+  margin-left: 5px; }
+
+.preview-noticias-caja {
+  animation-name: mimovimiento;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite; }
+
+@keyframes mimovimiento {
+  0% {
+    background-color: #cc7aaa; }
+  25% {
+    background-color: #d9bcc6; }
+  50% {
+    background-color: #d9a7b9; }
+  100% {
+    background-color: #cc7aaa; } }
+
+.container {
+  margin: 1px; }
+
+.card-producto {
+  margin-right: 10px;
+  padding-bottom: 50px; }
+
+.titulo__producto {
+  margin-right: 10px;
+  margin-top: 40px; }
+
+/*Galeria*/
+.galeria:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04); }
+
+/*Tienda*/
+.productos {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  margin-right: 5px; }
+
+.caja__producto {
+  margin: 10px 0;
+  width: 330px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 20px; }
+  .caja__producto img {
+    width: 100%; }
+
+.boton-2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #000000; }
+
+/*Noticias*/
+.contenedor h2 {
+  margin-top: 20px;
+  font-size: x-large; }
+
+.text-center-titulo {
+  font-size: 30px;
+  background-color: #f9f0ac;
+  transition: background-color 2s ease; }
+  .text-center-titulo:hover {
+    background-color: #bcfcdc; }
+
+.text-center {
+  background-color: #f9f0ac;
+  font-size: 15px;
+  transition: background-color 2s ease; }
+  .text-center span {
+    font-weight: bold; }
+  .text-center:hover {
+    background-color: #bcfcdc; }
+
+/*Registrate*/
+.iniciosesion-fluid {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #FBDFE9; }
+
+.registrate {
+  padding-bottom: 20px; }
+
+.padding-1 {
+  padding: 10px; }
