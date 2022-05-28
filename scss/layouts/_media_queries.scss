@@ -142,19 +142,13 @@
     }
 }
    
- @media screen and (min-width:768px){
+@media screen and (min-width:768px){
     .grid{
         grid-template-areas: "header header header header"
                              "main main main aside"
                              "footer footer footer footer"
         ;
         grid-gap: 5px;
-    }
-
-    .barra{
-        & img{
-            margin-left: 20px;
-        }
     }
 
     header .contenedor{
@@ -189,6 +183,9 @@
         width: 100%;
         align-items: center;
         flex-direction: row;
+        & img{
+            margin-left: 20px;
+        }
     }
     .barra-navegacion{
         width: 100%;
@@ -280,6 +277,7 @@
         width: 700px;
     }
 }
+    
 
 @media screen and (min-width:1024px){
     .grid{
