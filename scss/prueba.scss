@@ -155,6 +155,7 @@ main{
 
 .titulo__producto{
     margin-right: 10px;
+    margin-top: 40px;
 }
 
 /*Galeria*/
@@ -173,11 +174,13 @@ main{
 .productos{
     display: flex;
     flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .caja__producto{
     margin: 10px 0;
-    width: 350px;
+    width: 330px;
     background-color: #fff;
     border: 1px solid #000;
     border-radius: 10px;
@@ -233,6 +236,7 @@ main{
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 5px;
+    margin-right: 5px;
     background-color: #FBDFE9;
  }
  .registrate{
@@ -307,6 +311,7 @@ main{
     .productos{
         display: flex;
         flex-direction: column;
+        margin-left: 17px;
     }
     
     .caja__producto{
@@ -354,6 +359,25 @@ main{
         margin: 20px;
     }
     
+    .productos{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    
+    .caja__producto{
+        margin: 10px;
+        width: 350px;
+        background-color: #fff;
+        border: 1px solid #000;
+        border-radius: 10px;
+        padding: 20px;
+    
+            & img{
+                width: 100%;
+            }
+    }
+
     .cajas{
         display: flex;
     }
@@ -445,6 +469,7 @@ main{
         margin-left: 50px;
             & h3{
                 font-size: large;
+
             }
     }
 
@@ -458,8 +483,9 @@ main{
     }
 
     .card-producto{
-        margin-right: 0px;
-
+        & h3{
+            margin-top: 6px;
+        }
     }
 
     .cajas .contenedor{
@@ -472,16 +498,28 @@ main{
     }
     .caja-1, .caja-2, .caja-3{
         padding: 10px;
-        margin-left: 5px;
+        margin-left: 10px;
     }   
     .productos{
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
     }
+    
     .caja__producto{
-        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 30px;
+        width: 500px;
+        background-color: #fff;
+        border: 1px solid #000;
+        border-radius: 10px;
+        padding: 20px;
+    
+            & img{
+                width: 100%;
+            }
     }
-   
+
     .container-fluid{
         margin-left: 80px;
     }
@@ -535,10 +573,14 @@ main{
         width: 360px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
         margin-bottom: 20px;
+        margin-right: 2px;
         & img {
             width: 100%;
-             height: 100%; 
+            height: 100%; 
             }
+        &h3{
+            font-size: x-large;
+        }
 
    }
 
@@ -550,23 +592,25 @@ main{
             & h3{
                 font-size: large;
             }
+            & li{
+                padding: 30px 100px;
+                    & span{
+                        margin-left: 100px;
+                    }
+            }
     }
 
     .caja__del__index{
-        padding-left: 10px;
-        margin-top: 10px;
-        margin-right: 40px;
-        display: flex;
-        justify-content: center;
-
+        width: 200%;
+        margin-right: 80px;
+        padding-bottom: 50px;
     }
 
     .card-producto{
         margin-right: 0px;
+        width: 20%;
 
     }
-
-
     .contenedor{
         max-width: 1024px;
     }
@@ -578,14 +622,31 @@ main{
     .productos{
         flex-direction: row;
         justify-content: space-between;
+        margin-left: 35px;
     }
     .caja__producto{
-        width: 320px;
+        width: 350px;
     }
     
     .iniciosesion-fluid{
-        margin: 200px;
-        width: 700px; 
+        margin: 80px 250px;
+        width: 800px;
+         
     }
+    .caja-1, .caja-2, .caja-3{
+        padding: 10px;
+        margin-left: 100px;
+    }   
     
+}
+
+@media screen and (min-width:1440px) {
+    .productos{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 5px;
+    }
+    .caja__producto{
+        width: 300px;
+    }    
 }
